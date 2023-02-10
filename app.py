@@ -8,7 +8,7 @@ from model import load_model,  process_sms
 load_dotenv()  # load environment variables
 
 TWILIO_ACCOUNT_SID = 'ACe1e820b54bed046e2892d0020622edd1'
-TWILIO_AUTH_TOKEN = "e5bc2d91f3798be26802604747140154"
+TWILIO_AUTH_TOKEN = "fc31b45230bbb016ec66ae4d60a0f1c6"
 twilio_api = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 
 warnings.filterwarnings("ignore")
@@ -44,3 +44,5 @@ def index():
     return response
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=4000, debug=True)
+   
+   
